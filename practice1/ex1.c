@@ -1,19 +1,12 @@
 #include <stdio.h>
+#include <stdarg.h>
 
-int main()
+int sum(int num, ...)
 {
-    int score[5] = {65, 92, 88, 74, 99};
+    va_list args;
+    int total = 0;
 
-    int max = score[0];
+    va_start(args, num);
 
-    for (int i = 1; i < 5; i++)
-    {
-        if (score[i] > max)
-        {
-            max = score[i];
-        }
-    }
-
-    printf("최고 점수: %d\n", max);
-    return 0;
+    for
 }
